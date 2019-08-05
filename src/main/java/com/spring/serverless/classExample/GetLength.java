@@ -1,4 +1,4 @@
-package com.spring.serverless.functions.Length;
+package com.spring.serverless.classExample;
 
 import java.util.function.Function;
 

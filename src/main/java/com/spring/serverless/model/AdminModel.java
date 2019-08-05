@@ -1,6 +1,6 @@
-package com.spring.serverless.functions.User.model;
+package com.spring.serverless.model;
 
-public class User {
+public class AdminModel {
 	private String userName;
 	private String password;
 
