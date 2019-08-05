@@ -1,7 +1,14 @@
-# Getting Started
+# Spring Cloud Functioon
 
-### Reference Documentation
-For further reference, please consider the following sections:
+Simple Spring app to demonstrate how to develop a Server-less application with Spring.
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+### Installation
 
+This app requires Java 8 to run.
+
+```sh
+$ git clone git@github.com:sanimkhan/spring-cloud-function.git
+$ cd spring-cloud-function
+$ mvn clean install
+$ java -jar target/spring-cloud-function-0.0.1-SNAPSHOT.jar
+```
