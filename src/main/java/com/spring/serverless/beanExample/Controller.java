@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-import com.spring.serverless.model.UserModel;
+import com.spring.serverless.model.Model;
 
 @Component
 public class Controller {
@@ -30,12 +30,11 @@ public class Controller {
 	}
 
 	@Bean
-	public Function<UserModel, UserModel> createUser() {
-		return userRequest -> {
-			UserModel userResponse = new UserModel();
-			userResponse.setUserName(userRequest.getUserName());
-			return userResponse;
+	public Function<Model, Model> reverseString() {
+		return model -> {
+			String reverseString = new StringBuilder(model.getValue()).reverse().toString();
+			model.setValue(reverseString);
+			return model;
 		};
 	}
-
 }

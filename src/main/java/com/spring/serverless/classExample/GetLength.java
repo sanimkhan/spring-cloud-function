@@ -2,10 +2,10 @@ package com.spring.serverless.classExample;
 
 import java.util.function.Function;
 
-public class GetLength implements Function<String, String> {
+public class GetLength implements Function<String, Integer> {
 	 
     @Override
-    public String apply(String value) {
-    	return new StringBuilder(value).reverse().toString();
+    public Integer apply(String value) {
+    	return value.length();
     }
 }
