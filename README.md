@@ -2,7 +2,7 @@
 
 Simple Spring app to demonstrate how to develop a Server-less application with Spring.
 
-# Spring Cloud Function
+### Tutorial
 
 Tutorial link- https://medium.com/monstar-lab-bangladesh-engineering/developing-server-less-application-with-spring-boot-eea3a761c1d3
 
